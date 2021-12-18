@@ -1,18 +1,195 @@
-.container {
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+  .main {
+    min-height: 84vh;
+    padding: 0rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(133, 133, 197, 0.494);
+    align-items: center;
+    text-align: center;
+    border-radius: 5%;
+    border-width: 3px;
+    border-style: groove;
+    border-color: rgba(13, 29, 255, 0.344);
+    background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ;
+    background-size: cover;
+
+  }
+  .box{
+    color:rgb(84, 84, 84);
+    margin: 0 0 1rem 0; 
+    align-items: center;
+    align-items:center;
+    text-align: inherit;
+    
+    background-color: rgba(0, 0, 255, 0.35);
+    border-radius: 5%;
+    
+    
+    
+  } 
+  
+  .bonito{
+  font-size: 2.3rem;
+  width: 328px;
+  height: 100px;
+  -moz-border-radius: 0 50% / 0 100%;
+  -webkit-border-radius: 0 50% / 0 100%;
+  border-radius: 0 48% / 0 93%;
+  border: 2px solid #555;
+}
+
+  .container{
+    border-width: 5%;
+    border-radius: 5%;
+    color: aliceblue;
+    /* background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ; */
+    background-size: cover;
+    opacity: 0.8;
+
+    align-items: center;
+    text-align: center;
+
+
+    border-radius: 5%;
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgba(13, 29, 255, 0.124);
+    
+    background-color: rgba(0, 123, 255, 0.111);
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  .main {
+    min-height: 84vh;
+    padding: 0rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(133, 133, 197, 0.494);
+    align-items: center;
+    text-align: center;
+    border-radius: 5%;
+    border-width: 3px;
+    border-style: groove;
+    border-color: rgba(13, 29, 255, 0.344);
+    background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ;
+    background-size: cover;
+    color:aliceblue
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  .main {
+    min-height: 84vh;
+    padding: 0rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(133, 133, 197, 0.494);
+    align-items: center;
+    text-align: center;
+    border-radius: 5%;
+    border-width: 3px;
+    border-style: groove;
+    border-color: rgba(13, 29, 255, 0.344);
+    background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ;
+    background-size: cover;
+  }
+  
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+    
+  .main {
+    min-height: 84vh;
+    padding: 0rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(133, 133, 197, 0.494);
+    align-items: center;
+    color:rgb(202, 202, 202);
+
+    text-align: center;
+    border-radius: 5%;
+    border-width: 3px;
+    border-style: groove;
+    border-color: rgba(13, 29, 255, 0.344);
+    background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ;
+    background-size: cover;
+
+
+
+  }
+  
+}
+
+/* .container {
   padding: 0 2rem;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  min-height: 84vh;
+  padding: 0rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgba(133, 133, 197, 0.494);
   align-items: center;
+  text-align: center;
+  border-radius: 5%;
+  border-width: 3px;
+  border-style: groove;
+  border-color: rgba(13, 29, 255, 0.344);
+  background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ;
+  background-size: cover;
 }
 
-.footer {
+.bodys {
+  background-color: rgb(0, 0, 216);
+  background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ;
+
+}
+.box{
+  color:rgb(194, 194, 194);
+  margin: 0 0 1rem 0;
+
+} */
+
+/* .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
@@ -113,4 +290,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
