@@ -5,7 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-
+import styles from '../styles/Home.module.css'
 
 
 import Accordion from '@mui/material/Accordion';
@@ -110,150 +110,148 @@ const StudyProjects = () => {
 
     return (
 
-        <Container>
+
+        <Container >
 
 
+            <div className={styles.container}>
 
-            <div className="d-flex flex-wrap align-content-center">
-                <div className="container">
+
+                <div className="d-flex flex-wrap align-content-center">
                     <div className="container">
+                        <div className="container">
 
-                        <h1 className="text-center">Proyectos de estudio</h1><br /><br />
-
-
-
+                            <h1 className="text-center">Proyectos de estudio</h1>
 
 
 
+                            <div>
+                                <Box sx={{ width: '100%' }}>
+                                    <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                                        <Tabs value={value} onChange={handleChange}
+                                            variant="scrollable"
+                                            scrollButtons
+                                            centered
+                                            aria-label="basic tabs example" >
+
+                                            <Tab label="Sistema Clima" {...a11yProps(1)} />
+                                            <Tab label="Crimenes Uk" {...a11yProps(2)} />
+                                            <Tab label="Menú Virtual" {...a11yProps(3)} />
+                                            <Tab label="Scraping" {...a11yProps(4)} />
 
 
+                                        </Tabs>
+                                    </Box>
+                                    <motion.main
+
+                                        animate={{ x: 1, y: 20, opacity: 1 }}
+                                        transition={{
+                                            delay: 1,
+                                            x: { type: "spring", stiffness: 100 },
+                                            default: { duration: 1 },
+                                        }}
+
+                                    >
+
+                                        {
+                                            <ul>
+                                                {data.map((item) =>
+                                                    // <li key={item.id}>
+                                                    //   {item.title1} - {item.tecnologi} - <img src={item.url} alt=""  />
+                                                    // </li>
 
 
-                        <div>
-                            <Box sx={{ width: '100%' }}>
-                                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                                    <Tabs value={value} onChange={handleChange}
-                                        variant="scrollable"
-                                        scrollButtons
-                                        centered
-                                        aria-label="basic tabs example" >
+                                                    <TabPanel value={value} key={item.id} index={item.id}>
+                                                        <div>
+                                                            <div >
+                                                                <h5>{item.title1}</h5>
+                                                                <link href="https://github.com/nicoContigliani/clima_React" />
+                                                                <div className="box">
+                                                                    <img src={item.url} alt="..." />
 
-                                        <Tab label="Sistema Clima" {...a11yProps(1)} />
-                                        <Tab label="Crimenes Uk" {...a11yProps(2)} />
-                                        <Tab label="Menú Virtual" {...a11yProps(3)} />
-                                        <Tab label="Scraping" {...a11yProps(4)} />
+                                                                </div>
 
-
-                                    </Tabs>
-                                </Box>
-                                <motion.main
-
-                                    animate={{ x: 1, y: 20, opacity: 1 }}
-                                    transition={{
-                                        delay: 1,
-                                        x: { type: "spring", stiffness: 100 },
-                                        default: { duration: 1 },
-                                    }}
-
-                                >
-
-                                    {
-                                        <ul>
-                                            {data.map((item) =>
-                                                // <li key={item.id}>
-                                                //   {item.title1} - {item.tecnologi} - <img src={item.url} alt=""  />
-                                                // </li>
-
-
-                                                <TabPanel value={value} key={item.id} index={item.id}>
-                                                    <div>
-                                                        <div >
-                                                            <h5>{item.title1}</h5>
-                                                            <link href="https://github.com/nicoContigliani/clima_React" />
-                                                            <div className="box">
-                                                                <img src={item.url} alt="..." />
 
                                                             </div>
+                                                            <div>
+                                                                <br />
+                                                                <Accordion>
+                                                                    <AccordionSummary
+                                                                        expandIcon={<ExpandMoreIcon />}
+                                                                        aria-controls="panel1a-content"
+                                                                        id="panel1a-header"
+                                                                    >
+                                                                        <Typography>Descripción</Typography>
+                                                                    </AccordionSummary>
+                                                                    <AccordionDetails>
+                                                                        <Typography>
+                                                                            <span>{item.description}</span>
+                                                                        </Typography>
+                                                                    </AccordionDetails>
+                                                                </Accordion>
+                                                                <Accordion>
+                                                                    <AccordionSummary
+                                                                        expandIcon={<ExpandMoreIcon />}
+                                                                        aria-controls="panel2a-content"
+                                                                        id="panel2a-header"
+                                                                    >
+                                                                        <Typography>Tecnologías Utilizadas</Typography>
+                                                                    </AccordionSummary>
+                                                                    <AccordionDetails>
+                                                                        <Typography>
+                                                                            {item.tecnologi}                                                         </Typography>
+                                                                    </AccordionDetails>
+                                                                </Accordion>
 
-
+                                                            </div>
                                                         </div>
-                                                        <div>
-                                                            <br />
-                                                            <Accordion>
-                                                                <AccordionSummary
-                                                                    expandIcon={<ExpandMoreIcon />}
-                                                                    aria-controls="panel1a-content"
-                                                                    id="panel1a-header"
-                                                                >
-                                                                    <Typography>Descripción</Typography>
-                                                                </AccordionSummary>
-                                                                <AccordionDetails>
-                                                                    <Typography>
-                                                                        <span>{item.description}</span>
-                                                                    </Typography>
-                                                                </AccordionDetails>
-                                                            </Accordion>
-                                                            <Accordion>
-                                                                <AccordionSummary
-                                                                    expandIcon={<ExpandMoreIcon />}
-                                                                    aria-controls="panel2a-content"
-                                                                    id="panel2a-header"
-                                                                >
-                                                                    <Typography>Tecnologías Utilizadas</Typography>
-                                                                </AccordionSummary>
-                                                                <AccordionDetails>
-                                                                    <Typography>
-                                                                        {item.tecnologi}                                                         </Typography>
-                                                                </AccordionDetails>
-                                                            </Accordion>
-
-                                                        </div>
-                                                    </div>
-                                                </TabPanel>
+                                                    </TabPanel>
 
 
-                                            )}
-                                        </ul>
-                                    }
+                                                )}
+                                            </ul>
+                                        }
 
-                                </motion.main>
-                                {/* <TabPanel value={value} index={1}>
+                                    </motion.main>
+                                    {/* <TabPanel value={value} index={1}>
                                     Item Two
-                                </TabPanel>
-                                <TabPanel value={value} index={2}>
+                                    </TabPanel>
+                                    <TabPanel value={value} index={2}>
                                     Item Three
                                 </TabPanel> */}
-                            </Box>
+                                </Box>
 
-                            {/* {
+                                {/* {
                                     data.map(item => { item })
                                 } */}
+                            </div>
+
+
+
+
+
+
+
+
+
                         </div>
 
 
-
-
-
+                        <br />
 
 
 
 
                     </div>
 
-
-                    <br />
-
-
+                    <hr />
 
 
                 </div>
 
-                <hr />
-
-
             </div>
-
         </Container>
+
     )
 }
 

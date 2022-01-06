@@ -1,160 +1,360 @@
-
-
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  
-  .main {
-    min-height: 84vh;
-    padding: 0rem 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(133, 133, 197, 0.494);
-    align-items: center;
-    text-align: center;
-    border-radius: 5%;
-    border-width: 3px;
-    border-style: groove;
-    border-color: rgba(13, 29, 255, 0.344);
-    background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ;
-    background-size: cover;
-
-  }
-  .box{
-    color:rgb(84, 84, 84);
-    margin: 0 0 1rem 0; 
-    align-items: center;
-    align-items:center;
-    text-align: inherit;
-    
-    background-color: rgba(0, 0, 255, 0.35);
-    border-radius: 5%;
-    
-    
-    
-  } 
-  
-  .bonito{
-  font-size: 2.3rem;
-  width: 328px;
-  height: 100px;
-  -moz-border-radius: 0 50% / 0 100%;
-  -webkit-border-radius: 0 50% / 0 100%;
-  border-radius: 0 48% / 0 93%;
-  border: 2px solid #555;
+@media (min-width: 320px) and (max-width: 700px) {
+    .co {
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        width: 50%;
+    }
+    .body {
+        background-color: red;
+    }
+    .bodys {
+        background-color: rgb(0, 0, 216);
+        background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+    }
+    .dream {
+        width: 10px;
+        height: 100px;
+        background-color: rgba(255, 0, 0, 0.665);
+        position: fixed;
+        animation-name: example;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+    }
+    @keyframes example {
+        0% {
+            background-color: red;
+            left: 15px;
+            top: 30px;
+        }
+        25% {
+            background-color: yellow;
+            left: 195px;
+            top: 30px;
+        }
+        50% {
+            background-color: blue;
+            left: 175px;
+            top: 210px;
+            width: 70px;
+            height: 70px;
+            border: 1px groove rgb(18, 101, 255);
+            background: #428bca;
+            -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+            -moz-transform: rotate(45deg) skew(15deg, 15deg);
+            -ms-transform: rotate(45deg) skew(15deg, 15deg);
+            -o-transform: rotate(45deg) skew(15deg, 15deg);
+            transform: rotate(45deg) skew(15deg, 15deg);
+        }
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 100px;
+        }
+        100% {
+            background-color: rgb(225, 0, 255);
+            left: 0px;
+            top: 0px;
+        }
+    }
+    .dream2 {
+        width: 10px;
+        height: 100px;
+        background-color: rgba(255, 0, 0, 0.665);
+        position: fixed;
+        animation-name: example2;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+    }
+    @keyframes example2 {
+        0% {
+            background-color: red;
+            left: 15px;
+            top: 30px;
+        }
+        25% {
+            background-color: yellow;
+            left: 195px;
+            top: 30px;
+        }
+        50% {
+            background-color: blue;
+            left: 150px;
+            top: 300px;
+            width: 70px;
+            height: 70px;
+            border: 1px groove rgb(18, 101, 255);
+            background: #428bca;
+            -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+            -moz-transform: rotate(45deg) skew(15deg, 15deg);
+            -ms-transform: rotate(45deg) skew(15deg, 15deg);
+            -o-transform: rotate(45deg) skew(15deg, 15deg);
+            transform: rotate(45deg) skew(15deg, 15deg);
+        }
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 100px;
+        }
+        100% {
+            background-color: rgb(225, 0, 255);
+            left: 0px;
+            top: 0px;
+        }
+    }
+    .dream3 {
+        width: 10px;
+        height: 100px;
+        background-color: rgba(255, 0, 0, 0.665);
+        position: fixed;
+        animation-name: example3;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+    }
+    @keyframes example3 {
+        0% {
+            background-color: red;
+            left: 15px;
+            top: 30px;
+        }
+        25% {
+            background-color: yellow;
+            left: 195px;
+            top: 30px;
+        }
+        50% {
+            background-color: blue;
+            left: 175px;
+            top: 390px;
+            width: 70px;
+            height: 70px;
+            border: 1px groove rgb(18, 101, 255);
+            background: #428bca;
+            -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+            -moz-transform: rotate(45deg) skew(15deg, 15deg);
+            -ms-transform: rotate(45deg) skew(15deg, 15deg);
+            -o-transform: rotate(45deg) skew(15deg, 15deg);
+            transform: rotate(45deg) skew(15deg, 15deg);
+        }
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 100px;
+        }
+        100% {
+            background-color: rgb(225, 0, 255);
+            left: 0px;
+            top: 0px;
+        }
+    }
+    .algo {
+        position: absolute;
+        width: 360px;
+        height: 418px;
+        background-color: red;
+    }
+    .main {
+        min-height: 84vh;
+        padding: 0rem 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(133, 133, 197, 0.063);
+        align-items: center;
+        text-align: center;
+        border-radius: 5%;
+        border-width: 1px;
+        border-style: groove;
+        border-color: rgba(13, 29, 255, 0.097);
+        background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+        background-size: cover;
+    }
+    .box {
+        color: rgb(84, 84, 84);
+        margin: 0 0 1rem 0;
+        align-items: center;
+        align-items: center;
+        text-align: inherit;
+        background-color: rgba(0, 0, 255, 0.35);
+        border: 2px solid rgba(85, 85, 85, 0.282);
+        border-radius: 0 48% / 0 93%;
+        border: 2px solid rgba(85, 85, 85, 0.145);
+        border-radius: 5%;
+    }
+    .bonito {
+        font-size: 2.3rem;
+        width: 328px;
+        height: 100px;
+        -moz-border-radius: 0 50% / 0 100%;
+        -webkit-border-radius: 0 50% / 0 100%;
+        border-radius: 0 48% / 0 93%;
+        border: 2px solid #555;
+    }
+    .container {
+        border-width: 5%;
+        border-radius: 5%;
+        /* background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ; */
+        background-size: cover;
+        opacity: 0.8;
+        align-items: center;
+        text-align: center;
+        border-radius: 5%;
+        border-width: 5px;
+        border-style: groove;
+        border-color: rgba(13, 29, 255, 0.124);
+        background-color: rgba(53, 75, 172, 0.111);
+    }
+    .container2 {
+        /* min-height: 84vh; */
+        padding: 0rem 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.534);
+        /* background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg"); */
+        align-items: center;
+        text-align: center;
+        border-radius: 5%;
+        border-width: 3px;
+        border-style: groove;
+        border-color: rgba(1, 12, 131, 0.131);
+        /* background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ; */
+        background-size: cover;
+    }
 }
 
-  .container{
-    border-width: 5%;
-    border-radius: 5%;
-    color: aliceblue;
-    /* background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ; */
-    background-size: cover;
-    opacity: 0.8;
-
-    align-items: center;
-    text-align: center;
-
-
-    border-radius: 5%;
-    border-width: 5px;
-    border-style: groove;
-    border-color: rgba(13, 29, 255, 0.124);
-    
-    background-color: rgba(0, 123, 255, 0.111);
-  }
+@media (min-width: 768px) and (max-width: 2000px) {
+    /* CSS */
+    .co {
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        width: 50%;
+    }
+    .body {
+        background-color: red;
+    }
+    .bodys {
+        background-color: rgb(0, 0, 216);
+        background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+    }
+    #nav ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+    .main {
+        min-height: 84vh;
+        padding: 0rem 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(133, 133, 197, 0.063);
+        align-items: center;
+        text-align: center;
+        border-radius: 5%;
+        border-width: 1px;
+        border-style: groove;
+        border-color: rgba(13, 29, 255, 0.097);
+        background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+        background-size: cover;
+    }
+    .box {
+        color: rgb(84, 84, 84);
+        margin: 0 0 1rem 0;
+        align-items: center;
+        text-align: inherit;
+        background-color: rgba(0, 0, 255, 0.35);
+        border: 2px solid rgba(85, 85, 85, 0.282);
+        border-radius: 0 48% / 0 93%;
+        border: 2px solid rgba(85, 85, 85, 0.145);
+        border-radius: 5%;
+        width: auto;
+    }
+    .bonito {
+        font-size: 2.3rem;
+        width: 328px;
+        height: 100px;
+        -moz-border-radius: 0 50% / 0 100%;
+        -webkit-border-radius: 0 50% / 0 100%;
+        border-radius: 0 48% / 0 93%;
+        border: 2px solid #555;
+    }
+    .container {
+        border-width: 5%;
+        border-radius: 5%;
+        /* background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ; */
+        background-size: cover;
+        opacity: 0.8;
+        align-items: center;
+        text-align: center;
+        border-radius: 5%;
+        border-width: 5px;
+        border-style: groove;
+        border-color: rgba(13, 29, 255, 0.124);
+        background-color: rgba(53, 75, 172, 0.111);
+    }
+    .container2 {
+        /* min-height: 84vh; */
+        padding: 0rem 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(166, 166, 182, 0.816);
+        /* background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg"); */
+        align-items: center;
+        text-align: center;
+        border-radius: 5%;
+        border-width: 3px;
+        border-style: groove;
+        border-color: rgba(1, 12, 131, 0.131);
+        /* background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ; */
+        background-size: cover;
+    }
 }
-
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  /* CSS */
-  .main {
-    min-height: 84vh;
-    padding: 0rem 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(133, 133, 197, 0.494);
-    align-items: center;
-    text-align: center;
-    border-radius: 5%;
-    border-width: 3px;
-    border-style: groove;
-    border-color: rgba(13, 29, 255, 0.344);
-    background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ;
-    background-size: cover;
-    color:aliceblue
-  }
-  
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  /* CSS */
-  
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-  /* CSS */
-  .main {
-    min-height: 84vh;
-    padding: 0rem 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(133, 133, 197, 0.494);
-    align-items: center;
-    text-align: center;
-    border-radius: 5%;
-    border-width: 3px;
-    border-style: groove;
-    border-color: rgba(13, 29, 255, 0.344);
-    background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ;
-    background-size: cover;
-  }
-  
-}
-
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
-  /* CSS */
-  
+    /* CSS */
 }
 
 @media (min-width: 1281px) {
-  
-  /* CSS */
-    
-  .main {
-    min-height: 84vh;
-    padding: 0rem 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(133, 133, 197, 0.494);
-    align-items: center;
-    color:rgb(202, 202, 202);
-
-    text-align: center;
-    border-radius: 5%;
-    border-width: 3px;
-    border-style: groove;
-    border-color: rgba(13, 29, 255, 0.344);
-    background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg") ;
-    background-size: cover;
-
-
-
-  }
-  
+    /* CSS */
+    .main {
+        min-height: 84vh;
+        padding: 0rem 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(133, 133, 197, 0.494);
+        align-items: center;
+        color: rgb(202, 202, 202);
+        text-align: center;
+        border-radius: 5%;
+        border-width: 3px;
+        border-style: groove;
+        border-color: rgba(13, 29, 255, 0.344);
+        background-image: url("../public/Imagenes/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+        background-size: cover;
+    }
 }
+
 
 /* .container {
   padding: 0 2rem;
@@ -188,6 +388,7 @@
   margin: 0 0 1rem 0;
 
 } */
+
 
 /* .footer {
   display: flex;
