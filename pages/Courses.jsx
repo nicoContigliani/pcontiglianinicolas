@@ -28,7 +28,7 @@ h5{
             @media (min-width: 320px) and (max-width: 700px) {
 
                 h5{
-                    color: rgb(121, 135, 150 );
+                    color: rgb(97, 97, 97 );
                 }
                  p {
                     background:black;
